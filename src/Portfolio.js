@@ -54,7 +54,10 @@ export default function PortfolioHome() {
           <h1>WEB & System <br /> Designer</h1>
           
           <p>BASED IN AMMAN.</p>
-          <button className="resume-btn">Resume</button>
+          <a href="/MyCV.pdf" target="_blank" rel="noopener noreferrer" className="resume-btn">
+  Resume
+</a>
+          
         </div>
         
         <div className="hero-image-container">
