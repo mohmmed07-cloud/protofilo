@@ -154,7 +154,7 @@ export default function PortfolioHome() {
             <p>A beautifully designed digital scrapbook built with React. It features a unique vintage, paper-like aesthetic with polaroid-style photo displays, mood tracking, and daily reflections. The application utilizes LocalStorage for seamless, private data management and offers dynamic content filtering.</p>
             {/* أزرار المشروع الأول (نادي المناظرات كمثال) */}
 <div className="project-buttons">
-  <a href="https://youtu.be/nZVddsFz6gs" target="_blank" rel="noopener noreferrer" className="btn-demo">
+  <a href="https://drive.google.com/file/d/1Dn1K-wbuL2nxGlj6fe5zm06NESjoWyZh/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="btn-demo">
     Watch Demo
   </a>
   <a href="https://github.com/mohmmed07-cloud/journal" target="_blank" rel="noopener noreferrer" className="btn-github">
