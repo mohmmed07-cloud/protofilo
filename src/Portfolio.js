@@ -110,7 +110,7 @@ export default function PortfolioHome() {
             <p>A fully responsive web platform built for the University of Jordan Debate Club using React and Firebase. It features dynamic content, secure application forms with Google reCAPTCHA, and real-time database management.</p>
                 {/* أزرار المشروع الأول (نادي المناظرات كمثال) */}
 <div className="project-buttons">
-  <a href="https://youtu.be/O99LmJ_fIT8" target="_blank" rel="noopener noreferrer" className="btn-demo">
+  <a href="https://drive.google.com/file/d/1Dn1K-wbuL2nxGlj6fe5zm06NESjoWyZh/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="btn-demo">
     Watch Demo
   </a>
   <a href="https://github.com/mohmmed07-cloud/meraki-project" target="_blank" rel="noopener noreferrer" className="btn-github">
@@ -134,7 +134,7 @@ export default function PortfolioHome() {
             <p>
               A comprehensive web application designed to digitize medical laboratory management. Built with React.js and Firebase, it features secure patient data archiving, real-time database updates, and advanced search capabilities. Key highlights include client-side image compression via HTML5 Canvas, integration with the ImgBB API for cloud medical report storage, and automated Excel export functionality for structured data management. 
             </p>
-            {/* أزرار المشروع الأول (نادي المناظرات كمثال) */}
+            
 <div className="project-buttons">
   <a href="https://youtu.be/SwwsBtDsUFU" target="_blank" rel="noopener noreferrer" className="btn-demo">
     Watch Demo
@@ -152,9 +152,9 @@ export default function PortfolioHome() {
             <span className="project-date">September 2026</span>
             <h3>Field Notes Diary</h3>
             <p>A beautifully designed digital scrapbook built with React. It features a unique vintage, paper-like aesthetic with polaroid-style photo displays, mood tracking, and daily reflections. The application utilizes LocalStorage for seamless, private data management and offers dynamic content filtering.</p>
-            {/* أزرار المشروع الأول (نادي المناظرات كمثال) */}
+            
 <div className="project-buttons">
-  <a href="https://drive.google.com/file/d/1Dn1K-wbuL2nxGlj6fe5zm06NESjoWyZh/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="btn-demo">
+  <a href="https://youtu.be/nZVddsFz6gs" target="_blank" rel="noopener noreferrer" className="btn-demo">
     Watch Demo
   </a>
   <a href="https://github.com/mohmmed07-cloud/journal" target="_blank" rel="noopener noreferrer" className="btn-github">
