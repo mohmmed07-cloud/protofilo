@@ -149,6 +149,29 @@ body {
   margin: 20px 0;            
   letter-spacing: 0;
 }
+/* تأثير الكتابة السلس بدون تخريب الحجم أو اللون */
+.typewriter-line1, .typewriter-line2 {
+  display: inline-flex;
+  overflow: hidden;
+  white-space: nowrap;
+  vertical-align: bottom; /* للحفاظ على المحاذاة الأصلية للسطر */
+}
+
+.typewriter-line1 {
+  width: 0;
+  animation: typing-effect 1.2s steps(20, end) forwards;
+}
+
+.typewriter-line2 {
+  width: 0;
+  /* السطر الثاني ينتظر 1.2 ثانية حتى ينتهي الأول ثم يبدأ */
+  animation: typing-effect 1.2s steps(15, end) 1.2s forwards; 
+}
+
+@keyframes typing-effect {
+  from { width: 0; }
+  to { width: 100%; }
+}
 
 .hero-content p {
   font-size: 1.2rem;
@@ -160,6 +183,7 @@ body {
 
 .resume-btn {
   position: relative;
+  text-decoration: none;
   background-color: transparent; 
   border: 2px solid #00004d; 
   color: #2b2b2b; 
@@ -192,35 +216,32 @@ body {
 }
 
 .image-frame {
-  position: relative;
-  display: inline-block; 
+  width: 320px; /* يمكنك تكبير أو تصغير الحجم */
+  height: 320px;
+  overflow: hidden;
+  
+  /* السر هنا: قيم غير متساوية تصنع الشكل المتعرج */
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  border: 4px solid #00004d; /* لون الإطار الأحمر */
+  
+  /* تأثير حركي خفيف يجعل الدائرة تتحرك ببطء (احترافي جداً) */
+  animation: morph 8s ease-in-out infinite; 
 }
 
 .image-frame img {
-  width: 320px;
-  height: 320px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 4px solid #fff;
-  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* يمنع تمطيط الصورة */
 }
 
-.decorative-lines {
-  position: absolute;
-  bottom: 25px;
-  left: -20px;
-  width: 90px;
-  height: 45px;
-  background: repeating-linear-gradient(
-    45deg,
-    #3b3a1a,
-    #3b3a1a 4px,
-    transparent 4px,
-    transparent 12px
-  );
-  transform: rotate(-35deg);
-  z-index: 2;
+/* حركة الإطار */
+@keyframes morph {
+  0% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+  50% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
+  100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
 }
+
+
 
 .decorative-plusses {
   position: absolute;

@@ -6,6 +6,7 @@ import DECLUBImG from './JU_DEBATE_CLUB_SCREEN_SHOT.png';
 import JournalImg from './Journal-img.png';
 import LabImg from './NabilLab.png';
 import ContactImg from './contact-image.webp';
+import { Sparkles, Code } from 'lucide-react';
 import { FaLinkedin, FaWhatsapp, FaBars, FaTimes } from 'react-icons/fa';
 
 export default function PortfolioHome() {
@@ -51,24 +52,36 @@ export default function PortfolioHome() {
           <span className="greeting">Hello, I’m Mohmmed,</span>
           
           {/* تم إضافة <br /> لكسر السطر بين الكلمتين */}
-          <h1>WEB & System <br /> Designer</h1>
+       <h1>
+  <span className="typewriter-line1">WEB & System</span>
+  <br />
+  <span className="typewriter-line2">Designer</span>
+</h1>
           
           <p>BASED IN AMMAN.</p>
-          <a href="/MyCV.pdf" target="_blank" rel="noopener noreferrer" className="resume-btn">
+        <a href={process.env.PUBLIC_URL + '/MyCV.pdf'} target="_blank" rel="noopener noreferrer" className="resume-btn">
   Resume
 </a>
           
         </div>
         
-        <div className="hero-image-container">
-          <div className="image-frame">
-              <img src={meImage} alt="John Doe" />
-              {/* عنصر الخطوط المزخرفة (تم تعديل مكانه وحجمه بالـ CSS) */}
-              <div className="decorative-lines"></div>
-              {/* عنصر علامات الزائد */}
-              <div className="decorative-plusses">++</div>
-          </div>
-        </div>
+        <div className="hero-image-container" style={{ position: 'relative', display: 'inline-block' }}>
+  
+  {/* 1. حاوية الصورة (نغلقها فوراً بعد الصورة) */}
+  <div className="image-frame">
+    <img src={meImage} alt="Mohmmed Abbas" />
+  </div>
+
+  {/* 2. الأيقونات نضعها في الخارج مع ضبط أماكنها بدقة */}
+  <div className="decorative-lines" style={{ position: 'absolute', bottom: '-10px', left: '-30px', zIndex: 10 }}>
+    <Code size={48} color="#303314" strokeWidth={1.5} />
+  </div>
+
+  <div className="decorative-plusses" style={{ position: 'absolute', top: '-10px', right: '-20px', zIndex: 10 }}>
+    <Sparkles size={40} color="#303314" strokeWidth={1.5} />
+  </div>
+
+</div>
       </section>
 
       {/* قسم عني (About Section) */}
@@ -103,7 +116,7 @@ export default function PortfolioHome() {
         <div className="projects-grid">
           <div className="project-card">
             {/* أضفنا كلاس project-link للرابط */}
-            <a href="https://computer.ju.edu.jo/ar/arabic/home.aspx" target="_blank" rel="noopener noreferrer" className="project-link">
+            <a href="https://github.com/mohmmed07-cloud/meraki-project" target="_blank" rel="noopener noreferrer" className="project-link">
               {/* غيرنا كلاس الصورة إلى project-img-brutalist */}
               <img src={DECLUBImG} alt="JU Debate Club" className="project-img-brutalist" />
             </a>
@@ -127,7 +140,7 @@ export default function PortfolioHome() {
           
           <div className="project-card">
             {/* وسم الرابط <a> يحيط بالصورة */}
-            <a href="ضع_رابط_المشروع_هنا" target="_blank" rel="noopener noreferrer" className="project-link">
+            <a href="https://github.com/mohmmed07-cloud/nabil" target="_blank" rel="noopener noreferrer" className="project-link">
               {/* تذكر استيراد صورة المشروع، مثلاً LabImg */}
               <img src={LabImg} alt="Nabil Abbas Lab Information System" className="project-img-brutalist" />
             </a>
@@ -177,7 +190,10 @@ export default function PortfolioHome() {
         <div className="contact-content">
           <div className="contact-image">
             {/* لا تنسَ استيراد صورة مناسبة، مثلاً صورة لمكتبك أو صورة شخصية أخرى */}
+            <a href="https://wa.me/962779584928" target="_blank" rel="noopener noreferrer">
             <img src={ContactImg} alt="Contact Mohmmed" className="contact-img-brutalist" />
+            </a>
+            
           </div>
           
           <div className="contact-info">
