@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Analytics } from "@vercel/analytics/react"
 import './Portfolio.css'; // ملف التنسيقات الخارجي
 import meImage from './ME.jpeg';
 import CImage from './KASITIMG.jpeg';
@@ -16,6 +17,7 @@ export default function PortfolioHome() {
 
   return (
     <div className="portfolio-container">
+      <Analytics />
       {/* شريط التنقل العلوي (Navbar) */}
       <nav className="navbar">
         <div className="logo">MOHMMED ABBAS</div>
